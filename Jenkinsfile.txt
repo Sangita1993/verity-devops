@@ -14,6 +14,17 @@ pipeline {
             }
         }
 		//Code ends for stage Clean
+		//Code ends for stage PMD
+		
+		
+		
+		//Code starts for stage Compile
+		stage('Compile') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+		//Code Ends for stage Compile
 		
 	
 		
